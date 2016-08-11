@@ -1,0 +1,158 @@
+@import '../sass/vendors/bootstrap';
+html,body{
+	background-color:#EEEEEE
+}
+
+// @keyframes scalingImg {
+// 	from{
+// 		transform:scale(1)
+// 	}
+// 	to{
+// 		width:810px;
+// 		height:510px;
+// 		position:absolute;
+// 		left:0;
+// 		right:0;
+// 		margin:20px auto;
+// 	}
+// }
+
+
+#main{
+	.container{
+		position:absolute;
+		left:0;
+		top:0;
+		margin:0 auto;
+	}
+	.row{
+		&:nth-child(2){
+			.mainPage{
+				img{
+					width:150px;
+					display:inline-block;
+					margin:5px;
+					cursor:pointer;
+					animation:scalingImg 0.5s 1;
+					animation-play-state:paused;
+					&:first-child{
+						width:220px;
+						float:left
+					}
+					&:nth-child(3){
+						clear:left
+					}
+				}
+			}
+		}
+	}
+}
+
+// .bMbg{
+// 	background-color:black;
+// 	width:100%;
+// 	height:620px;
+// 	padding:45px;
+// 	display:none;
+// }
+
+.scale{
+	transform:scale(1.5)
+}
+
+
+#blackMirror{
+	background-color:black;
+	width:100%;
+	height:670px;
+	padding:50px 0 0 0;
+	position:absolute;
+	left:0;
+	top:0;
+	img{
+		display:block;
+		margin:0 auto;
+		width:60%;
+		height:90%;
+	}
+}
+.popBg{
+	background-color:black;
+	width:100%;
+	height:670px;
+	display:none;
+	position:relative;
+	z-index:50;
+	i{
+		color:white;
+		cursor:pointer;
+		padding:335px 0;
+		&:hover{
+			color:#CFD8DC
+		}
+		z-index:60;
+	}
+	.glyphicon-arrow-left{
+		float:left;
+	}
+	.glyphicon-arrow-right{
+		float:right
+	}
+	.settings{
+		position:relative;
+		right:0px;
+		top:0;
+		background-color:red;
+		p{
+			color:white;
+			position:absolute;
+			left:0;
+			top:0;
+			z-index:1000;
+		}
+		.rightSettings{
+			float:right;
+		}
+		.glyphicon-remove,i{
+			color:white;
+			padding:10px;
+			cursor:pointer;
+			&:hover{
+				color:#CFD8DC
+			}
+			z-index:70;
+		}
+		.glyphicon-zoom-in,.glyphicon-zoom-out{
+			z-index:72;
+			color:white;
+			margin:10px;
+			padding:10px;
+			cursor:pointer;
+			&:hover{
+				color:#CFD8DC
+			}
+		}
+		.glyphicon-zoom-out{
+			padding:10px;
+			display:none;
+		}
+	}
+	h3{
+		text-align:center;
+		font-size:15px;
+		z-index:80;
+		background-color:black;
+		opacity: 0.7;
+		width:100%;
+		text-align:center
+	}
+	#popParas{
+		position:absolute;
+		left:0;
+		right:0;
+		bottom:0px;
+		margin:0 auto;
+		padding:20px 0;
+		z-index:100;
+	}
+}
